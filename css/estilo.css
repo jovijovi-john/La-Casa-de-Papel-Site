@@ -1,0 +1,270 @@
+
+@font-face{
+    font-family: 'Bebas Neue';
+    src: url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+}
+
+@font-face{
+    font-family: 'Sen';
+    src: url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+}
+
+html, body, #home{
+
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: linear-gradient(50deg, #d81111 0%, #910000 100%);
+    background-attachment: fixed; 
+}
+
+.navbar-transparente {
+    
+    background: rgba(0, 0, 0, 0.75);
+    padding: 2rem 0;
+}
+
+.navbar-light .navbar-brand {
+    
+    color: white;
+
+} 
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #e11e25;
+}
+
+.botao-principal {
+    color: white !important;
+    border-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+#home .container {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#contrate {
+    font-family: Bebas Neue;
+    letter-spacing: 0.5rem;
+    font-size: 8rem;
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 300ms;
+}
+
+#contrate:hover {
+    text-decoration: none;
+    color: #e11e25;
+}
+
+#servicos {
+    
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    background: white;
+    box-shadow: 0 0 1em #910000;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+#servicos h2{
+    
+    font-family: Bebas Neue;
+    letter-spacing: 0.5rem;
+    font-weight: bold;
+
+    color: #e11e25;
+    font-size: 3rem;
+    text-align: center;
+    border-bottom: #e11e25 0.325rem solid;
+    margin-bottom: 2rem;
+}
+
+#servicos p{
+    text-indent: 0.2rem;
+    font-size: 1rem;
+    color: rgb(75, 75, 75);
+}
+
+#servicos h4 {
+    padding-bottom: 0.60rem;
+    color: black;
+    border-bottom: 0.08125rem #e11e25 solid;
+}
+
+.col-professor img {
+
+    margin-bottom: 1rem;    
+}
+
+.col-professor {
+    background: black;
+    padding: 2rem;
+}
+
+#servicos .col-professor p {
+    color: #f7ececc5;
+    text-indent: 1.5rem;
+}
+
+footer {
+    background: black;
+    display: flex;
+    position: relative;
+    padding: 3.125rem 0px 1.25rem 0px;
+}
+
+footer h4 {
+    text-align: center;
+    color: white;
+    background: #e11e25;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+footer ul li {
+    margin: 0px 0.5rem;
+}
+
+footer .navbar-nav a{
+    color: white;
+    font-size: 0.8rem;
+}
+
+
+
+#redes-sociais{
+    padding-left: 0;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}    
+
+#redes-sociais li {
+    margin: 0 1rem;
+}
+
+#redes-sociais li a i {
+    color: white;
+    font-size: 2.5rem;
+}
+
+#redes-sociais li a i:hover {
+    color: #e11e25;
+}
+
+
+
+@media (min-width: 992px) {
+
+    #col-redes-sociais {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #home {
+    
+        background: url(../img/oi.png);
+        background-color: black;
+        background-position: center center;
+        
+        background-attachment: fixed;
+    }
+
+}
+
+@media (max-width: 991.98px) {
+
+    footer .col-lg-2 h4, 
+    footer #redes-sociais {
+        margin-top: 1rem;
+        border-top: 1px solid #919496;
+    }
+
+    #contrate {
+        font-size: 6rem;
+    }
+    
+    #home {
+        background: url(../img/imagem-op.png);
+        background-color: rgb(15, 15, 15);
+        background-position: center top;
+        background-attachment: fixed;
+    }
+
+    footer h4 {
+        padding-top: 1rem;
+        color: #919496;
+        background: none;
+        text-align: start;
+        text-indent: 2px;
+    }
+
+    #col-redes-sociais {
+        display: block;
+    }
+    
+    footer{
+        padding-bottom: 0;
+    }
+
+    footer #redes-sociais {
+        padding-top: 1rem;
+    }
+}
+
+@media (max-width: 767.98px){
+
+    #contrate {
+        font-size: 5rem;
+        transition: none;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        margin-top: 0.8rem;
+    }
+        
+    .navbar-light .navbar-nav .nav-link:hover {
+        background:#e11e25;
+        color: white;
+    }
+}
+
+
+@media (max-width: 575.98px) {
+
+    #servicos .col-professor h2 {
+        font-size: 2rem;
+        border-bottom: 2px solid #e11e25;   
+    }
+
+    #contrate {
+        font-size: 3rem;
+    }
+
+    .navbar-brand {
+        margin-left: 0.8rem;
+    }
+
+    .botao-principal {
+        margin-right: 0.8rem;
+    }
+
+}
